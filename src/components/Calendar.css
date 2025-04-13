@@ -1,0 +1,24 @@
+.fc-timegrid-slot {
+  height: 60px !important; /* Bigger tiles for Week/Day views */
+}
+
+.fc-timegrid-slot-label {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.fc-timegrid-event {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.fc-daygrid-day {
+  font-size: 14px;
+}
+
+.fc-event{
+  border-radius: 4px;
+  border-width: 0px 0px 0px 4px;
+  background-color: #eee;
+}
