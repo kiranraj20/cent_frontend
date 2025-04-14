@@ -49,7 +49,7 @@ const MyCalendar = ({ onTaskDrop }) => {
       title: event.title,
       start: moment(event.start).toDate(),
       end: moment(event.end).toDate(),
-      color: event.backgroundColor,
+      color: event.borderColor,
     });
     setSelectedSlot(null);
     setModalOpen(true);
@@ -67,7 +67,7 @@ const MyCalendar = ({ onTaskDrop }) => {
         title: event.title,
         start: newStart,
         end: newEnd,
-        color: event.backgroundColor,
+        color: event.borderColor,
       })
     );
   };
@@ -80,7 +80,7 @@ const MyCalendar = ({ onTaskDrop }) => {
         title: event.title,
         start: moment(event.start).toDate(),
         end: moment(event.end).toDate(),
-        color: event.backgroundColor,
+        color: event.borderColor,
       })
     );
   };
@@ -103,7 +103,7 @@ const MyCalendar = ({ onTaskDrop }) => {
         setSelectedSlot({ start, end });
         setSelectedEvent({
           title: parsedData.title,
-          color: parsedData.backgroundColor,
+          color: parsedData.borderColor,
         });
         setModalOpen(true);
       } catch (error) {}
